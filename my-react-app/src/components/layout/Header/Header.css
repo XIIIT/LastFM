@@ -1,0 +1,155 @@
+Header {
+  width: 100%;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  background-color: var(--clr-black);
+}
+Header .container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: inherit;
+  padding-right: 20px;
+  position: relative;
+}
+Header .container__logo {
+  display: flex;
+  align-items: center;
+  width: 120px;
+  height: 100%;
+  position: relative;
+  left: 32px;
+  margin-left: 0;
+}
+Header .container__logo a.container__link {
+  display: flex;
+  width: 100%;
+  height: 28px;
+  position: absolute;
+  align-items: center;
+}
+Header .container__nav {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  position: static;
+}
+Header .container__nav a.search-toggle {
+  color: transparent;
+  display: inline-block;
+  height: 40px;
+  width: 32px;
+  position: relative;
+  font: 0/0 a;
+  opacity: 0.85;
+}
+Header .container__nav a.search-toggle:focus, Header .container__nav a.search-toggle:hover {
+  opacity: 1;
+}
+Header .container__nav a.search-toggle::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url(https://www.last.fm/static/images/icons/search/search_16.9c1d552b8f55.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+Header .container__nav a.search-toggle::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: var(--clr-white);
+  position: absolute;
+  bottom: 0;
+  transition: 0.25s;
+  left: 0;
+}
+Header .container__nav a.search-toggle:hover:after {
+  width: 100%;
+}
+Header .container .container__navlist {
+  margin-left: 32px;
+  max-width: 100%;
+  overflow: hidden;
+  list-style-type: none;
+  display: flex;
+}
+Header .container .container__navlist a.navlist__link {
+  display: block;
+  text-align: left;
+  font-size: 16px;
+  line-height: 40px;
+  height: 40px;
+  text-decoration: none;
+  color: white;
+  font-family: "Barlow";
+  position: relative;
+}
+Header .container .container__navlist a.navlist__link-hover:after {
+  content: "";
+  background: var(--clr-white);
+  position: absolute;
+  width: 0;
+  transition: 0.25s;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+}
+Header .container .container__navlist a.navlist__link-hover:hover::after {
+  width: 100%;
+}
+Header .container .container__navlist .navlist__items {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+}
+Header .container .container__navlist .navlist__items .navlist__item {
+  display: inline-block;
+  height: 40px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+Header .container .container__navlist .navlist__auth {
+  margin-left: 36px;
+  display: flex;
+  gap: 35px;
+  align-items: center;
+}
+Header .container .container__navlist .navlist__auth:before {
+  background-color: #fff;
+  content: "";
+  display: inline-block;
+  height: 28px;
+  opacity: 0.3;
+  vertical-align: middle;
+  width: 1px;
+}
+Header .container .container__navlist .navlist__auth-item {
+  display: inline-block;
+  height: 40px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+Header .container .container__navlist .navlist__auth-item .navlist__auth-item:first-child {
+  border: none;
+}
+Header .container .container__navlist .navlist__auth-item .navlist__sign-up {
+  padding: 0 20px;
+  background-color: var(--clr-dust);
+  border-radius: 3px;
+  color: var(--clr-mineshaft);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+Header .container .container__navlist .navlist__auth-item .navlist__sign-up:hover {
+  background-color: var(--clr-fog);
+}/*# sourceMappingURL=Header.css.map */

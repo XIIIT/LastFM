@@ -1,0 +1,66 @@
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+:root {
+    --clr-black: #000;
+    --clr-obsidian: #111;
+    --clr-mineshaft: #222;
+    --clr-soot: #2c2c2c;
+    --clr-charcoal: #333;
+    --clr-graphite: #666;
+    --clr-slate: #707070;
+    --clr-cement: #999;
+    --clr-ash: #adadad;
+    --clr-silver: #ccc;
+    --clr-smog: #d7d7d7;
+    --clr-fog: #e3e3e3;
+    --clr-lunar: #ebebeb;
+    --clr-dust: #eee;
+    --clr-platinum: #f9f9f9;
+    --clr-white: #fff;
+    --clr-anchor: #9da9a8;
+    --clr-submarine: #b6c0bf;
+    --clr-navy: #005399;
+    --clr-megaman: #2b65d9;
+    --clr-azure: #06f;
+    --clr-sky: #5cb4ff;
+    --clr-arctic: #d9e5fa;
+    --clr-aero: #e9effb;
+    --clr-offwhite: #f4f5f7;
+    --clr-indigo: #3636d9;
+    --clr-aubergine: #433377;
+    --clr-violet: #90f;
+    --clr-magenta: #c09;
+    --clr-sangria: #9d0000;
+    --clr-habanero: #f71414;
+    --clr-postbox: #d92323;
+    --clr-blush: #fadcdc;
+    --clr-rose: #fbe9e9;
+    --clr-tangerine: #e63900;
+    --clr-fire: #f60;
+    --clr-carrot: #f90;
+    --clr-merigold: #fb0;
+    --clr-sunflower: #ffc900;
+    --clr-squash: #ecad00;
+    --clr-caramel: #cc7d00;
+    --clr-latte: #ffefe5;
+    --clr-vanilla: #fcf2cf;
+    --clr-lemonade: #fff9e5;
+    --clr-turquoise: #00afbf;
+    --clr-teal: #1e6875;
+    --clr-forest: #00703d;
+    --clr-fern: #096;
+    --clr-jade: #00ad7a;
+    --clr-pistachio: #8fbf00;
+}
+
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Barlow, Open Sans, Lucida Grande, Helvetica Neue, Helvetica, Arial, Sans-serif;
+}
