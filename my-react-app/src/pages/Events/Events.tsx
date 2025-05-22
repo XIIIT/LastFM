@@ -1,7 +1,7 @@
 const Events = () => {
     return (
-        <>
-        </>
+        <div className="main-content">
+        </div>
     )
 }
 
