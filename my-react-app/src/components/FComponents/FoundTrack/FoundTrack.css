@@ -1,0 +1,59 @@
+.tracks-section {
+  max-width: 770px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 57px;
+}
+.tracks-section .section-title {
+  font-size: 24px;
+}
+.tracks-section .tracks-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+.tracks-section .track-card {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  max-width: 740px;
+  max-height: 32px;
+  height: 100%;
+  padding: 9px 15px;
+  align-items: center;
+  gap: 15px;
+  box-sizing: content-box;
+  border-bottom: 1px solid rgb(235, 235, 235);
+}
+.tracks-section .track-image {
+  min-height: 32px;
+  max-height: 32px;
+  min-width: 32px;
+  max-width: 32px;
+}
+.tracks-section .track-info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 15px;
+}
+.tracks-section .track-info .track-name {
+  max-width: 320px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.tracks-section .track-info .track-artist {
+  max-width: 213px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.no-results {
+  font-size: 16px;
+}/*# sourceMappingURL=FoundTrack.css.map */

@@ -1,0 +1,31 @@
+.track-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.track-list {
+  max-width: 1170px;
+  padding: 20px;
+  width: 100%;
+}
+
+.track-list__items {
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  grid-template-rows: repeat(auto-fit, 80px);
+  grid-gap: 30px;
+}
+
+@media screen and (max-width: 1025px) {
+  .track-list {
+    width: 100%;
+  }
+  .track-list__items {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(auto-fit, 60px);
+    grid-column-gap: 20px;
+    grid-row-gap: 24px;
+    grid-gap: 30px;
+  }
+}/*# sourceMappingURL=TrackList.css.map */

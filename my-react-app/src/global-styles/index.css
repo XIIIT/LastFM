@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Open+Sans:wght@400;600&display=swap');
+
 html {
     -webkit-text-size-adjust: 100%;
 }
@@ -63,4 +65,27 @@ html {
 
 body {
     font-family: Barlow, Open Sans, Lucida Grande, Helvetica Neue, Helvetica, Arial, Sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+header {
+    position: fixed;
+    z-index: 999;
+}
+
+footer {
+    margin-top: auto;
+    height: 100%;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    margin-top: 68px;
+    min-height: 100vh;
 }

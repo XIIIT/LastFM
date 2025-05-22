@@ -9,8 +9,10 @@ import Music from "./pages/Music/Music";
 import Charts from "./pages/Charts/Charts";
 import Events from "./pages/Events/Events";
 import NotFound from "./pages/NotFound/NotFound";
+import Search from "./pages/Search/Search";
 
 import Header from "./components/layout/Header/Header"
+import Footer from "./components/layout/Footer/Footer"
 
 function App() {
 
@@ -25,6 +27,7 @@ function App() {
       <Route path="/charts/" element={<Charts />} />
       <Route path="/events" element={<Events />} />
       <Route path="*" element={<NotFound />} />
+      <Route path="/search" element={<Search />} />
     </Routes>
   );
 
@@ -32,6 +35,7 @@ function App() {
     <Router>
       <Header />
       {routes}
+      <Footer />
     </Router>
   )
 }
