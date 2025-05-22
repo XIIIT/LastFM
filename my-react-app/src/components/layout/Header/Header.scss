@@ -20,7 +20,6 @@ Header {
             width: 120px;
             height: 100%;
             position: relative;
-            left: 32px;
             margin-left: 0;
     
             a.container__link {
@@ -38,8 +37,10 @@ Header {
             align-items: center;
             position: static;
 
-            a.search-toggle {
+            button.search-toggle {
                 color: transparent;
+                background-color: transparent;
+                border: transparent;
                 display: inline-block;
                 height: 40px;
                 width: 32px;
@@ -169,6 +170,109 @@ Header {
                             background-color: var(--clr-fog);
                         }
                     }
+                }
+            }
+        }
+
+    }
+
+    .search-box {
+        width: 100%;
+        display: flex;
+        height: inherit;
+        align-items: center;
+        flex-direction: row;
+        position: relative;
+
+        &__input-area {
+            max-width: 1280px;
+            width: 100%;
+            max-height: 32px;
+            height: 100%;
+            padding: 18px 20px;
+            background-color: var(--clr-black);
+            color: var(--clr-fog);
+            border: transparent;
+            font-size: 18px;
+            line-height: 24px;
+            position: absolute;
+            left: 0;
+            
+            &:focus {
+                border: none;
+                outline: none;
+            }
+        }
+
+        .search-buttons {
+            position: absolute;
+            right: 0;
+            box-sizing: border-box;
+            display: flex;
+            width: 100%;
+            max-width: 136px;
+            height: 100%;
+            max-height: 68px;
+
+            &__input-cancel {
+                position: absolute;
+                max-width: 68px;
+                width: 100%;
+                max-height: 68px;
+                height: 100%;
+                left: 0;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+
+                &::before {
+                    content: '';
+                    height: 2px;
+                    width: 24px;
+                    background: #9a9a9a;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%) rotate(45deg);
+
+                }
+                
+                &:hover::before {
+                    background-color: #b9b9b9;
+                }
+
+                &::after {
+                    content: '';
+                    height: 2px;
+                    width: 24px;
+                    background: #9a9a9a;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%) rotate(-45deg);
+
+                }
+
+                &:hover::after {
+                    background-color: #b9b9b9;
+                }
+            }
+
+            &__input-submit {
+                position: absolute;
+                right: 0;
+                width: 100%;
+                max-width: 68px;
+                height: inherit;
+                border: none;
+                background-color: #D92323;
+                background-image: url(https://www.last.fm/static/images/icons/search/search_16.9c1d552b8f55.svg);
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #F71414;
                 }
             }
         }

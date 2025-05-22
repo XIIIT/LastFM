@@ -32,7 +32,7 @@ export const login = createAsyncThunk(
       // Симуляция запроса
       await new Promise(resolve => setTimeout(resolve, 800));
       
-      // Для Демо персонажей
+      // Для Демо
       const users = [
         { id: '1', username: 'Admin', email: 'user@example.com', password: 'FW2qqVuvf!vk7!N' },
       ];
