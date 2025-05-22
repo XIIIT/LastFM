@@ -47,4 +47,10 @@
 
 .search-area {
   max-width: 770px;
+}
+
+@media (max-width: 1025px) {
+  .search-content {
+    padding-left: 45px;
+  }
 }/*# sourceMappingURL=Search.css.map */
