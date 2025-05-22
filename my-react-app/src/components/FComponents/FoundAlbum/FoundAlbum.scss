@@ -1,0 +1,85 @@
+.album-section {
+    max-width: 770px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 57px;
+    
+    .section-title {
+        max-width: 770px;
+        width: 100%;
+        color: #222;
+        box-sizing: border-box;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    
+    .album-list {
+        display: grid;
+        grid-template-columns: repeat(4, 192px);
+        grid-template-rows: repeat(2, 192px);
+        list-style-type: none;
+    }
+    
+    .album-image-container {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: end;
+        justify-content: flex-start;
+        position: relative;
+    }
+    
+    .album-image-container::after {
+        background-image: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, .35) 70%, rgba(0, 0, 0, .7));
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    
+    .album-info {
+        display: flex;
+        flex-direction: column;
+        max-height: 36px;
+        height: 100%;
+        max-width: 162px;
+        width: 100%;
+        padding: 0 15px 0 15px;
+        margin-bottom: 15px;
+    }
+    
+    .album-name {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        min-height: 18px;
+        max-height: 18px;
+        font-size: 14px;
+        line-height: 18px;
+        color: white;
+        z-index: 2;
+        filter: drop-shadow(0 0 10px rgba(0,0,0,.7));
+    }
+    
+    .album-artist {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-height: 18px;
+        min-height: 18px;
+        color: white;
+        z-index: 2;
+        filter: drop-shadow(0 0 10px rgba(0,0,0,.7));
+    }
+    
+    .no-results {
+        font-size: 16px;
+    }
+}
