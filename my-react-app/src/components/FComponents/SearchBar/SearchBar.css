@@ -1,0 +1,60 @@
+.search-container {
+  width: 100%;
+  max-width: 770px;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+  margin-bottom: 24px;
+}
+.search-container .search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 8px 16px;
+  background-color: white;
+}
+.search-container .search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-size: 16px;
+  background: transparent;
+}
+.search-container .clear-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #999;
+  margin-right: 8px;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-container .clear-button:hover {
+  color: #333;
+}
+.search-container .search-button {
+  background-image: url(https://www.last.fm/static/images/icons/search/search_232323_16@2x.21ba32cf82c7.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 0;
+  margin-left: 8px;
+  width: 16px;
+  height: 16px;
+}
+.search-container .search-button.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.search-container .search-container.focused {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}/*# sourceMappingURL=SearchBar.css.map */

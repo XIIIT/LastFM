@@ -1,0 +1,16 @@
+.track-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.track-list {
+  max-width: 1170px;
+  padding: 20px;
+}
+
+.track-list__items {
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  grid-template-rows: repeat(auto-fit, 80px);
+  grid-gap: 30px;
+}/*# sourceMappingURL=TrackList.css.map */
